@@ -2,6 +2,13 @@
 	margin: 0;
 	padding: 0;
 }
+@font-face {
+  font-family: 'open_sans';
+  src: url('../fonts/open_sans/opensans-webfont.eot');
+  src: url('../fonts/open_sans/opensans-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open_sans/opensans-webfont.woff2') format('woff2'), url('../fonts/open_sans/opensans-webfont.woff') format('woff'), url('../fonts/open_sans/opensans-webfont.ttf') format('truetype'), url('../fonts/open_sans/opensans-webfont.svg#webfontregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 a {
   text-decoration: none;
 }
@@ -20,7 +27,24 @@ ul li {
 }
 #content h1, h2 {
 	text-align: center;
+	font-family: open_sans;
 }
 .pure-form {
+	margin-top: 32px;
+	margin: 0 auto;
+	width: 400px;
+	text-align: center;
+}
+#formulario {
 	margin-top: 16px;
+	width: 500px;
+	margin: 16px auto;
+}
+
+input {
+	margin: 0 auto !important;
+}
+
+select {
+	margin-right: 82px !important;
 }
