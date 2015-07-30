@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Python Beach</title>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<div id="wrapper">
+	<div id="content">
+		<header id="header">
+			<h1>Python Beach 3.0</h1>
+			<h2>Faça sua inscrição!</h2>
+		</header>
+		<form action="." method="post" class="pure-form">
+			{% csrf_token %}
+			<fieldset class="pure-group">
+				{% for field in form %}
+					{{ field }}
+				{% endfor %}
+			</fieldset>
+		<button class="pure-button pure-input-1-2 pure-button-primary" type="submit">Inscreva-se</button>
+		</form>
+	</div>
+</div>
+</body>
+</html>

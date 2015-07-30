@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+ul li {
+  display: inline-block;
+}
+#wrapper {
+	width: 100%;
+}
+#content {
+	width: 960px;
+	margin: 0 auto;
+}
+#content h1, h2 {
+	text-align: center;
+}
+.pure-form {
+	margin-top: 16px;
+}
