@@ -9,6 +9,8 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
 a {
   text-decoration: none;
 }
@@ -30,21 +32,25 @@ ul li {
 	font-family: open_sans;
 }
 .pure-form {
-	margin-top: 32px;
+	padding-top: 50px;
 	margin: 0 auto;
 	width: 400px;
 	text-align: center;
 }
 #formulario {
 	margin-top: 16px;
-	width: 500px;
+	width: 545px;
+	min-height: 390px;
+	background-color: #ccc;
 	margin: 16px auto;
+	border-radius: 20px;
 }
 
 input {
 	margin: 0 auto !important;
+	width: 350px;
 }
 
 select {
-	margin-right: 82px !important;
+	margin-right: 244px !important;
 }
