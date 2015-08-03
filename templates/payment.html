@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Python Beach</title>
+	<link rel="stylesheet" href="{% static 'css/pure-min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<section id="wrapper_payment">
+	<div id="content_payment">
+		<h1>III Python Beach</h1>
+		<p>
+			<span>Caro, {{ enroll }}</span>
+
+			Gostaríamos de parabenizá-lo por estar fazendo parte da realização deste evento. Python Beach nasceu no intuito de ser uma porta de entrada para todos que querem não só aprender, mas também ensinar.
+			Mais abaixo, você encontrará algumas informações.
+		</p>
+		<ul>
+			<li>
+				<p>
+					<span>Nome</span>: {{ enroll }}
+				</p>
+			</li>
+			<li>
+				<p>
+					<span>Email</span>: {{ enroll.email }}
+				</p>
+			</li>
+			<li>
+				<p>
+					<span>Cidade</span>: {{ enroll.city }}
+				</p>
+			</li>
+			<li>
+				<p>
+					<span>Instituição</span>: {{ enroll.institution }}
+				</p>
+			</li>
+			<li>
+				<p>
+					<span>Local de realização</span>: Faculdade Maurício de Nassau
+				</p>
+			</li>
+			<li>
+				<p>
+					<span>Valor</span>: R$ 10,00. Pago somente no local do evento.
+				</p>
+			</li>
+		</ul>
+		<p>
+			Você terá direito a receber um certificado de 20h, expedido pela Faculdade Maurício de Nassau.
+		</p>
+		<a href="{% url 'core:index' %}">Go back</a>
+	</div>
+	<div id="sponsors">
+		<h2>Realização</h2>
+		<ul>
+			<li>
+				<a href="">
+					<img src="{% static 'img/sponsor.png' %}" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="{% static 'img/sponsor.png' %}" alt="">
+				</a>
+			</li>
+		</ul>
+	</div>
+</section>
+</body>
+</html>

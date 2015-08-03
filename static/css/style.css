@@ -52,5 +52,64 @@ input {
 }
 
 select {
-	margin-right: 244px !important;
+	margin-right: 234px !important;
+}
+
+section#wrapper_payment {
+	width: 100%;
+}
+
+div#content_payment {
+	margin: 0 auto;
+	width: 960px;
+}
+
+div#content_payment h1 {
+	text-align: center;
+}
+
+div#content_payment p{
+	margin-bottom: 30px;
+}
+
+div#content_payment p span {
+	display: block;
+	margin-bottom: 30px;
+}
+
+div#content_payment ul {
+	list-style-type: none;
+	margin-bottom: 30px;
+}
+
+div#content_payment ul li {
+	display: list-item;
+	margin-bottom: 10px;
+}
+
+div#content_payment ul li p {
+	margin-bottom: 0px;
+}
+
+div#content_payment ul li p span {
+	display: inline;
+	font-weight: bold;
+}
+
+div#sponsors {
+	margin: 0 auto;
+	width: 570px;
+}
+
+div#sponsors h2 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+div#sponsors ul li {
+	margin-right: 20px;
+}
+
+div#sponsors ul li:last-child {
+	margin-right: 0px;
 }
