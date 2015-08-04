@@ -12,10 +12,10 @@
 	<div id="content_payment">
 		<h1>III Python Beach</h1>
 		<p>
-			<span>Caro, {{ enroll }}</span>
+			<span>{{ enroll }},</span>
 
-			Gostaríamos de parabenizá-lo por estar fazendo parte da realização deste evento. Python Beach nasceu no intuito de ser uma porta de entrada para todos que querem não só aprender, mas também ensinar.
-			Mais abaixo, você encontrará algumas informações.
+			Gostaríamos de lhe parabenizar por estar fazendo parte da realização deste evento. Python Beach nasceu no intuito de ser uma porta de entrada para todos que querem não só aprender, mas também compartilhar conhecimento.
+			Mais abaixo, você encontrará suas informações e outras adicionais.
 		</p>
 		<ul>
 			<li>
@@ -40,35 +40,50 @@
 			</li>
 			<li>
 				<p>
-					<span>Local de realização</span>: Faculdade Maurício de Nassau
+					<span>Local do pagamento</span>: Faculdade Maurício de Nassau
 				</p>
 			</li>
 			<li>
 				<p>
-					<span>Valor</span>: R$ 10,00. Pago somente no local do evento.
+					<span>Valor</span>: R$ 10,00. (<em>Pago presencialmente</em>).
 				</p>
 			</li>
 		</ul>
 		<p>
-			Você terá direito a receber um certificado de 20h, expedido pela Faculdade Maurício de Nassau.
+		Ao realizar o pagamento, guarde consigo o comprovante contendo a assinatura da coordenação (<em>logo abaixo</em>), que comprova o seu pagamento.
+			Você terá direito a receber um certificado de 20h, expedido pela Faculdade Maurício de Nassau. 
 		</p>
-		<a href="{% url 'core:index' %}">Go back</a>
+		<div id="signature">
+			<div class="assign">
+				<p>____________________________________</p>
+				<span>Coordenação</span>
+			</div>
+			<div class="assign">
+				<p>____________________________________</p>
+				<span>Participante</span>
+			</div>
+		</div>
+		<button class="myButton" onclick="printPage()">Imprimir comprovante</button>
+		<p>
+			Para mais informações, entre em <a href="mailto:pmazulo@gmail.com">contato</a>.
+		</p>
 	</div>
 	<div id="sponsors">
 		<h2>Realização</h2>
 		<ul>
 			<li>
-				<a href="">
-					<img src="{% static 'img/sponsor.png' %}" alt="">
+				<a href="http://www.mauriciodenassau.edu.br/estrutura/exibir/col/21/fil/1/eid/1/piaui_parnaiba_fap_">
+					<img src="{% static 'img/logo_nassau.jpg' %}" alt="Faculdade Maurício de Nassau">
 				</a>
 			</li>
 			<li>
-				<a href="">
-					<img src="{% static 'img/sponsor.png' %}" alt="">
+				<a href="http://www.indacode.com">
+					<img src="{% static 'img/logo_indacode.jpg' %}" alt="Indacode">
 				</a>
 			</li>
 		</ul>
 	</div>
+<script src="{% static 'js/main.js' %}"></script>
 </section>
 </body>
 </html>
