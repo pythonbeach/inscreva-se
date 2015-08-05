@@ -47,12 +47,12 @@ ul li {
 }
 
 input {
-	margin: 0 auto !important;
+	margin: 0 auto 5px !important;
 	width: 350px;
 }
 
 select {
-	margin-right: 234px !important;
+	margin: 0 158px 5px 0 !important;
 }
 
 section#wrapper_payment {
