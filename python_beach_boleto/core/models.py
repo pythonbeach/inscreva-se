@@ -34,10 +34,14 @@ class Enrollment(models.Model):
         )
     name = models.CharField('Nome', max_length=50)
     email = models.EmailField('Email', unique=True)
-    degree = models.CharField('Formação', max_length=100)
+    degree = models.CharField(
+        'Formação', max_length=100, null=True, blank=True
+    )
     state = models.CharField('Estado', choices=states, max_length=30)
     city = models.CharField('Cidade', max_length=50)
-    institution = models.CharField('Instituição', max_length=100)
+    institution = models.CharField(
+        'Instituição', max_length=100, null=True, blank=True
+    )
 
     class Meta:
         verbose_name = "Enrollment"
