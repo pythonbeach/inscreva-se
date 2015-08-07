@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5{
 	border-radius: 20px;
 }
 #line {
-	margin-top: 30px;
+	margin-top: 15px;
 	width: 490px;
 	background-color: #f9f9f9;
 	border-radius: 0 0 20px 20px;
@@ -91,8 +91,13 @@ input {
 
 button {
 	width: 350px;
+	margin-bottom: 20px;
 }
 
 select {
 	margin: 0 158px 5px 0 !important;
+}
+
+a#recovery_by_email {
+	color: #0078e7;
 }

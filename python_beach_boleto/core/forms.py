@@ -24,3 +24,11 @@ class EnrollmentForm(forms.ModelForm):
                 'placeholder': 'Formação',
             }),
         }
+
+
+class RecoveryPayment(forms.Form):
+    email = forms.EmailField(
+        widget=forms.TextInput(
+            attrs={'placeholder': 'Email', 'type': 'email'}
+        )
+    )
